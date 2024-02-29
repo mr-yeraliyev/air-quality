@@ -2,6 +2,7 @@
 import { Route, RouteProps } from 'react-router-dom'
 import { AuthLayout, BaseLayout } from './layouts'
 import { About, Home } from './components'
+import { ForgotPassword, Login, SignUp } from './views'
 
 const baseLayoutChildren: RouteProps[] = [
   {
@@ -15,7 +16,20 @@ const baseLayoutChildren: RouteProps[] = [
   },
 ]
 
-const authLayoutChildren: RouteProps[] = []
+const authLayoutChildren: RouteProps[] = [
+  {
+    path: '',
+    element: <Login />,
+  },
+  {
+    path: 'sign-up',
+    element: <SignUp />,
+  },
+  {
+    path: 'forgot-password',
+    element: <ForgotPassword />,
+  },
+]
 
 const routes: RouteProps[] = [
   {
