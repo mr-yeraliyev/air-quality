@@ -1,4 +1,5 @@
-export { default as Home } from './Home'
-export { default as About } from './About'
 export { default as AuthCard } from './AuthCard'
 export { default as AirQualityCustomButton } from './AirQualityCustomButton'
+export { default as AirQualityMenuButton } from './AirQualityMenuButton'
+export { default as BaseLayoutHeader } from './BaseLayoutHeader'
+export { default as BaseLayoutPagesMenu } from './BaseLayoutPagesMenu'

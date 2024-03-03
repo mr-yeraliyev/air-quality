@@ -1,8 +1,13 @@
 import { Box, TextField, Typography } from '@mui/material'
 import { AirQualityCustomButton, AuthCard } from '../components'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Login = () => {
+  const naviagate = useNavigate()
+
+  const handleLoginClick = () => {
+    naviagate('/')
+  }
   return (
     <AuthCard title="Login">
       <TextField
@@ -16,11 +21,14 @@ const Login = () => {
         label="Password"
         variant="filled"
         size="small"
+        type="password"
       />
       <Typography variant="caption" sx={{ color: '#65a6cb' }}>
         <Link to="/auth/forgot-password">Forgot Password ?</Link>
       </Typography>
-      <AirQualityCustomButton variant="contained">Login</AirQualityCustomButton>
+      <AirQualityCustomButton variant="contained" onClick={handleLoginClick}>
+        Login
+      </AirQualityCustomButton>
       <Box
         component="span"
         sx={{

@@ -20,12 +20,14 @@ const Login = () => {
       <TextField
         id="filled-basic"
         label="Create Password"
+        type="password"
         variant="filled"
         size="small"
       />
       <TextField
         id="filled-basic"
         label="Confirm Password"
+        type="password"
         variant="filled"
         size="small"
       />

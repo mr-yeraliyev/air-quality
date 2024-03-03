@@ -1,3 +1,7 @@
 export { default as Login } from './Login'
 export { default as SignUp } from './SignUp'
 export { default as ForgotPassword } from './ForgotPassword'
+export { default as MainPage } from './MainPage'
+export { default as FaqPage } from './FaqPage'
+export { default as AboutPage } from './AboutPage'
+export { default as ProfilePage } from './ProfilePage'

@@ -1,18 +1,32 @@
 // routes.ts
 import { Route, RouteProps } from 'react-router-dom'
 import { AuthLayout, BaseLayout } from './layouts'
-import { About, Home } from './components'
-import { ForgotPassword, Login, SignUp } from './views'
+import {
+  AboutPage,
+  FaqPage,
+  ForgotPassword,
+  Login,
+  MainPage,
+  ProfilePage,
+  SignUp,
+} from './views'
 
 const baseLayoutChildren: RouteProps[] = [
   {
     path: '',
-    element: <Home />,
+    element: <MainPage />,
   },
-
+  {
+    path: 'faq',
+    element: <FaqPage />,
+  },
   {
     path: 'about',
-    element: <About />,
+    element: <AboutPage />,
+  },
+  {
+    path: 'profile',
+    element: <ProfilePage />,
   },
 ]
 
